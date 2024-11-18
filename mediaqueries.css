@@ -1,0 +1,283 @@
+/* Ultra-wide screens (1400px and below) */
+@media screen and (max-width: 1400px) {
+   #profile {
+     height: 83vh;
+     margin-bottom: 6rem;
+   }
+ 
+   .about-containers {
+     flex-wrap: wrap;
+   }
+ 
+   #contact,
+   #projects {
+     height: fit-content;
+   }
+ 
+   section {
+     margin: 0 8%;
+   }
+ 
+   .section__pic-container {
+     width: 350px;
+     height: 350px;
+   }
+ }
+ 
+ /* Large tablets and smaller desktops (1200px and below) */
+ @media screen and (max-width: 1200px) {
+   #desktop-nav {
+     display: none;
+   }
+ 
+   #hamburger-nav {
+     display: flex;
+   }
+ 
+   #experience,
+   .experience-details-container {
+     margin-top: 2rem;
+   }
+ 
+   #profile,
+   .section-container {
+     display: block;
+   }
+ 
+   .arrow {
+     display: none;
+   }
+ 
+   section,
+   .section-container {
+     height: fit-content;
+   }
+ 
+   section {
+     margin: 0 5%;
+   }
+ 
+   .section__pic-container {
+     width: 275px;
+     height: 275px;
+     margin: 0 auto 2rem;
+   }
+ 
+   .about-containers {
+     margin-top: 0;
+   }
+ 
+   .btn {
+     font-size: 1rem;
+     width: 100%;
+   }
+ }
+ 
+ /* Tablets and large phones (768px and below) */
+ @media screen and (max-width: 768px) {
+   body {
+     font-size: 1rem; /* Reduce font size for smaller screens */
+   }
+ 
+   nav {
+     height: 10vh;
+     padding: 0 1rem;
+   }
+ 
+   #profile {
+     flex-direction: column; /* Stack content vertically */
+     text-align: center;
+   }
+ 
+   .btn-container {
+     flex-direction: column;
+     gap: 1rem;
+   }
+ 
+   .btn {
+     width: 100%;
+     font-size: 1rem;
+   }
+ 
+   .about-containers,
+   .contact-info-upper-container {
+     margin: 1rem 0;
+   }
+ 
+   #contact,
+   footer {
+     height: fit-content;
+     margin: 1rem 0;
+   }
+ 
+   .experience-details-container {
+     flex-direction: column;
+     gap: 1rem;
+   }
+ 
+   .section__text__p2 {
+     font-size: 1.5rem;
+   }
+ 
+   footer p {
+     font-size: 1rem;
+   }
+ }
+ 
+ /* Small devices and phones (480px and below) */
+ @media screen and (max-width: 480px) {
+   body {
+     font-size: 0.9rem; /* Slightly smaller font for tiny screens */
+   }
+ 
+   .section__pic-container {
+     width: 100%; /* Ensure images fit the screen width */
+     height: auto;
+   }
+ 
+   nav {
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem;
+   }
+ 
+   nav .nav-links {
+     flex-direction: column; /* Stack links vertically */
+     gap: 1rem;
+     text-align: center;
+   }
+ 
+   .title {
+     font-size: 1.5rem;
+   }
+ 
+   .section__text__p2 {
+     font-size: 1.2rem;
+   }
+ 
+   footer {
+     font-size: 0.9rem;
+     padding: 1rem;
+   }
+ 
+   footer p {
+     text-align: center;
+   }
+ 
+   .hamburger-icon {
+     height: 20px;
+     width: 25px;
+   }
+ 
+   .btn-container {
+     gap: 0.5rem;
+   }
+ }
+ 
+ /* General adjustments for all smaller screens */
+ @media screen and (max-width: 600px) {
+   #profile {
+     height: 83vh;
+     margin-bottom: 0;
+   }
+ 
+   article {
+     font-size: 1rem;
+   }
+ 
+   footer nav {
+     height: fit-content;
+     margin-bottom: 2rem;
+   }
+ 
+   .about-containers,
+   .contact-info-upper-container,
+   .btn-container {
+     flex-wrap: wrap;
+   }
+ 
+   .contact-info-container {
+     margin: 0;
+   }
+ 
+   .contact-info-container p,
+   .nav-links li a {
+     font-size: 1rem;
+   }
+ 
+   .experience-sub-title {
+     font-size: 1.25rem;
+   }
+ 
+   .logo {
+     font-size: 1.5rem;
+   }
+ 
+   .nav-links {
+     flex-direction: column;
+     gap: 0.5rem;
+     text-align: center;
+   }
+ 
+   .section__pic-container {
+     width: auto;
+     height: 46vw;
+     justify-content: center;
+   }
+ 
+   .title {
+     font-size: 2rem;
+   }
+ 
+   .text-container {
+     text-align: justify;
+   }
+ }
+
+/* BORDER CONTACTS/*
+
+/* Tablet View */
+@media screen and (max-width: 1200px) {
+  .contact-info-upper-container {
+    max-width: 90%; /* Expand to fit medium screens */
+    padding: 1.8rem; /* Reduce padding slightly for balance */
+  }
+
+  .contact-info-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  .conact-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+/* Phone View */
+@media screen and (max-width: 600px) {
+  .contact-info-upper-container {
+    max-width: 100%; /* Take full width on small screens */
+    padding: 1.5rem; /* Compact padding for tighter fit */
+  }
+
+  .contact-info-container {
+    flex-wrap: wrap; /* Ensure icons and text adjust for space */
+    gap: 0.8rem; /* Reduce gap for smaller devices */
+  }
+
+  .contact-info-container p {
+    font-size: 0.9rem; /* Slightly smaller text for readability */
+  }
+
+  .conact-icon {
+    width: 1.5rem; /* Scale icons down */
+    height: 1.5rem;
+  }
+}
+
+ 
